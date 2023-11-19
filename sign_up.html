@@ -1,0 +1,53 @@
+<!doctype html>
+<title>Sign Up</title>
+<link rel="stylesheet" href="website.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  img {
+    margin-top: 2%;
+}
+  p {
+    padding-top: 5%;
+	padding-bottom: 1%;
+}
+  form {
+    padding-top: 2%;
+	padding-bottom: 7%;
+}
+</style>
+
+<header>
+<table>
+  <tr><td><a class="other" href="plastic_stats.html">Plastic Stats</a><td><a class="other" href="how_is_plastic_made.html">How is Plastic Made?</a>
+  <td><a class="other" href="the_seven_types_of_plastic.html">The Seven Types of Plastic</a>
+  <tr><td><a class="other" href="why_plastic_is_so_useful.html">Why Plastic is So Useful</a><td><a class="other" href="ways_to_reduce_pollution.html">Ways to Reduce Pollution</a>
+  <td><a class="other" href="bibliography.html">Bibliography</a>
+  <tr><td style="visibility: hidden"><td style="visibility: hidden"><td><a class="other" href="sign_up.html">Recycling for 3D printing</a>
+</table>
+  <h1><a class="home" title="Back to home page" alt="Back to home page" href="homepage.html">Plastic Pollution</a></h1>
+</header>
+
+<h2>Sign Up</h2>
+<br>
+<img width="42%" title="A plastic bag floating in the ocean" alt="A plastic bag floating in the ocean" src="https://images.unsplash.com/photo-1565803973888-271ea4068fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+<p>At Opihi College, we are interested in making 3D printed models out of recycled plastic using our 3D printer. If you are part of a School Board around New Zealand and are
+interested in sending us any unused plastic for us to use, fill in the form below to get in touch with us:
+<br>
+<form method="post" name="contactform" action="contact_form_handler.php">
+  <label for="name">Name (First and last name)</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="school">School</label><br>
+  <input type="text" id="school" name="school"><br>
+  <label for="contact">Email address</label><br>
+  <input type="text" id="contact" name="contact"><br><br>
+  <button type="button">Submit</button>
+</form>
+<script language=”JavaScript”>
+var frmvalidator = new Validator(“contactform”);
+frmvalidator.addValidation(“name”,”req”,”Calan Meechang”); 
+frmvalidator.addValidation(“email”,”req”,”meechangca@opihicollege.school.nz”);
+frmvalidator.addValidation(“email”,”email”, “meechangca@opihicollege.school.nz”);
+</script>
+<footer>
+© Created by Calan, 2020
+</footer>
